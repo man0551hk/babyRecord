@@ -14,7 +14,7 @@ class DBController {
       case "delete": $query = self::MakeDeleteQuery($table, $fields); break;
       case "update": $query = self::MakeUpdateQuery($table, $fields); break;
     }
-    //echo $query;
+
     switch ($type) {
       case "query": return $this->dbConnection->DoQuery($this->dbConnection->link, $query); break;
       case "insert": return $this->dbConnection->DoQueryInsertId($this->dbConnection->link, $query); break;
