@@ -1,11 +1,11 @@
 <?php
 date_default_timezone_set("Asia/Hong_Kong");
-$domain = 'honestAdmin.honestplushk.com'; 
-$env = 'prod';
+$domain = 'https://baby.smoke2die.com/'; 
+$env = 'staging';
 $hostName = "localhost";
-$dbName = "honestpl_db";
-$userName = "honestpl_root";
-$password = "q9q2n~R7";    
+$dbName = "sq_babyrecord";
+$userName = "sq_babyrecord";
+$password = "%oDgw907";    
 
 // Email Server setup
 // Domain:alphacapital-group.com

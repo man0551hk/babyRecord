@@ -48,10 +48,10 @@
 				</a>
 				<a class="navbar-brand" href="<?=Url::getDomain()?>">
 						<b class="logo-icon p-l-10">
-							<img src="<?= Url::getStaticPath("images")?>/shinola_logo.png" alt="homepage" class="light-logo" />
+						
+							矇矇豬
 						</b>
 						<span class="logo-text">
-							<!-- <img src="<?= Url::assetFolderPath()?>images/logo-text.png" alt="homepage" class="light-logo" /> -->
 						</span>
 				</a>
 				<a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>

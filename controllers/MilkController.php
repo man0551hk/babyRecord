@@ -14,7 +14,7 @@ class MilkController {
       echo '<form method = "POST">';
       UI::CreateElement('action', 'hidden', null, 'updateEndTime');
       UI::CreateElement('id', 'hidden', null, $row["id"]);
-      echo "<td>" . $row["id"] . "</td>";
+      // echo "<td>" . $row["id"] . "</td>";
       echo "<td>" ;
       switch($row["milkType"]) {
         case 1: echo "人奶"; break;
@@ -43,7 +43,14 @@ class MilkController {
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '1邊'>1 邊</button>&nbsp;";
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '2邊'>2 邊</button>&nbsp;";
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '3邊'>3 邊</button>&nbsp;";
-        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '4邊'>4 邊</button>";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '4邊'>4 邊</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '少過1安'>少過 1 安</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '1安'>1 安</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '2安'>2 安</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '3安'>3 安</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '4安'>4 安</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '5安'>5 安</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '6安'>6 安</button>";
       } else if($row["milkType"] == 2 ) {
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '少過1安'>少過 1 安</button>&nbsp;";
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '1安'>1 安</button>&nbsp;";
@@ -59,6 +66,9 @@ class MilkController {
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '綠色 帶粒粒'>綠色 帶粒粒</button>&nbsp;";
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '深綠色 帶粒粒'>深綠色 帶粒粒</button>&nbsp;";
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '淺綠色 帶粒粒'>淺綠色 帶粒粒</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '綠色 無粒粒'>綠色 無粒粒</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '深綠色 無粒粒'>深綠色 無粒粒</button>&nbsp;";
+        echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '淺綠色 無粒粒'>淺綠色 無粒粒</button>&nbsp;";
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '條狀'>條狀</button>&nbsp;";
       }
       echo "</td>";

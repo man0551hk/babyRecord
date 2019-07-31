@@ -80,7 +80,6 @@ if (!empty($_POST)) {
                 <tr>
                   <?php
                     $header = array(
-                      'id',
                       'Milk Type',
                       'Start Time',
                       'End Time',
@@ -98,7 +97,7 @@ if (!empty($_POST)) {
                   'endTime',
                   'remark'
                 );           
-                $result = dbController::QueryDB('milk m', $cols, 'query', '', '');
+                $result = dbController::QueryDB('milk m', $cols, 'query', '', '', 'id desc');
                 milkController::CustomTableRecord($result);
               ?>
             </table>

@@ -6,10 +6,10 @@ class DBController {
     $this->dbConnection = $dbConnection;
   }
 
-  public function QueryDB($table, $fields = array(), $type = '', $condition = '', $joinTables = array()) {
+  public function QueryDB($table, $fields = array(), $type = '', $condition = '', $joinTables = array(), $sorting = '') {
     $query = "";
     switch ($type) {
-      case "query": $query = self::MakeSelectQuery($table, $fields, $condition, $joinTables); break;
+      case "query": $query = self::MakeSelectQuery($table, $fields, $condition, $joinTables, $sorting); break;
       case "insert": $query = self::MakeInsertQuery($table, $fields); break;
       case "delete": $query = self::MakeDeleteQuery($table, $fields); break;
       case "update": $query = self::MakeUpdateQuery($table, $fields); break;
@@ -23,7 +23,7 @@ class DBController {
     }
   }
 
-  public function MakeSelectQuery($table, $fields = array(), $condition = '', $joinTables = array()) {
+  public function MakeSelectQuery($table, $fields = array(), $condition = '', $joinTables = array(), $sorting) {
     $query  = "select " . implode(", ", $fields) . " from " . $table . ' ';
     if (is_array($joinTables) && sizeof($joinTables) > 1) {
       foreach($joinTables as $joint) {
@@ -32,6 +32,9 @@ class DBController {
     }
     if ($condition != '') {
       $query .= " where " . $condition;
+    }
+    if ($sorting != '') {
+      $query .= " order by " . $sorting;
     }
     return $query;
   }

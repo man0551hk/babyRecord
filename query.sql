@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 31, 2019 at 12:01 PM
+-- Generation Time: Jul 31, 2019 at 12:38 PM
 -- Server version: 5.7.25
 -- PHP Version: 5.6.40
 
@@ -36,7 +36,9 @@ INSERT INTO `milk` (`id`, `milkType`, `startTime`, `endtime`, `remark`) VALUES
 (1, 2, '2019-07-31 13:00:08', '2019-07-31 13:30:09', '1安'),
 (2, 4, '2019-07-31 13:35:38', '1900-01-01 00:00:00', '綠色 帶粒粒'),
 (3, 4, '2019-07-31 13:45:19', '1900-01-01 00:00:00', '綠色 帶粒粒'),
-(4, 1, '2019-07-31 15:30:13', '2019-07-31 15:40:48', '少過1邊');
+(4, 1, '2019-07-31 15:30:13', '2019-07-31 15:40:48', '少過1邊'),
+(5, 1, '2019-07-31 18:10:28', '2019-07-31 18:35:50', '1安'),
+(6, 4, '2019-07-31 18:36:49', '1900-01-01 00:00:00', '綠色 無粒粒');
 
 --
 -- Indexes for dumped tables
@@ -56,4 +58,4 @@ ALTER TABLE `milk`
 -- AUTO_INCREMENT for table `milk`
 --
 ALTER TABLE `milk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
