@@ -83,7 +83,8 @@ if (!empty($_POST)) {
                       'Milk Type',
                       'Start Time',
                       'End Time',
-                      'Remark'
+                      'Remark',
+                      'id'
                     ); 
                     UI::CreateTableHeader($header);
                   ?>

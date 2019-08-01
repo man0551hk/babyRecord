@@ -14,7 +14,7 @@ class MilkController {
       echo '<form method = "POST">';
       UI::CreateElement('action', 'hidden', null, 'updateEndTime');
       UI::CreateElement('id', 'hidden', null, $row["id"]);
-      // echo "<td>" . $row["id"] . "</td>";
+      
       echo "<td>" ;
       switch($row["milkType"]) {
         case 1: echo "人奶"; break;
@@ -72,6 +72,7 @@ class MilkController {
         echo "<button type = 'submit' class = 'btn btn-primary' id = 'submitType' name = 'submitType' value = '條狀'>條狀</button>&nbsp;";
       }
       echo "</td>";
+      echo "<td>" . $row["id"] . "</td>";
       echo '</form>';
       echo "</tr>";
      

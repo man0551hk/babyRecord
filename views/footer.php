@@ -47,7 +47,8 @@
 	<script src="<?= Url::jsFolderPath()?>function.js?v=<?php echo time(); ?>"></script>
 	<script>
     $(".select2").select2();
-    $('#zero_config').DataTable();
+    var table = $('#zero_config').DataTable();
+    table.order( [ 4, 'desc' ] ).draw();
 		SetDomain('<?=Url::getDomain()?>');
   </script>
 	<?php
